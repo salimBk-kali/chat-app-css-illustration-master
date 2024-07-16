@@ -1,0 +1,323 @@
+:root{
+    /*Colors*/
+
+    /* Primary */
+
+--Pale_Violet: hsl(276, 100%, 81%);
+--Moderate_Violet: hsl(276, 55%, 52%);
+--Desaturated_Dark_Violet : hsl(271, 15%, 43%);
+--Grayish_Blue : hsl(206, 6%, 79%);
+--Very_Dark_Desaturated_Violet : hsl(271, 36%, 24%);
+--Dark_Grayish_Violet: hsl(270, 7%, 64%);
+
+    /* Gradients */
+
+--Light_Magenta: hsl(293, 100%, 63%);
+--Light_Violet: hsl(0, 0%, 2%);
+
+    /* Secondary */
+
+--White: hsl(0, 0%, 100%);
+--Light_Grayish_Violet : hsl(270, 20%, 96%);
+--Very_Dark_Desaturated_Violet : hsl(271, 36%, 24%);
+--Very_Light_Magenta : hsl(289, 100%, 72%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+    font-family: "Rubik";
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Light_Grayish_Violet);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.simple_booking{
+    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+    margin-left: 10vh;
+    
+}
+.simple_booking h1{
+    font-size: 3.5vh;
+}
+.simple_booking p {
+    width: 37vh;
+    font-size: 1.5vh;
+    color: var(--Dark_Grayish_Violet);
+    
+}
+.App{
+    width: 40%;
+    position: relative;
+    
+}
+.App .background_image{
+    position: absolute;
+    top: 0;
+    height: 70vh;
+    width: 35vh;
+    background-color: var(--Moderate_Violet);
+    border-bottom-left-radius: 30vh;
+    border-bottom-right-radius: 50vh;
+}
+.phone{
+    position: absolute;
+    background-color: var(--White);
+    z-index: 1;
+    width: 27vh;
+    height: 62vh;
+    left: 25vh;
+    top: 5vh;
+    border-radius: 3vh;
+}
+.phone_mark{
+    position: absolute;
+    width: 15vh;
+    height: 3.5vh;
+    background-color: var(--White);
+    left: 6vh;
+    top: -0.2vh;
+    z-index: 4;
+    border-radius: 3vh;
+}
+.three_points div{
+    position: absolute;
+    width: 0.5vh;
+    height: 0.5vh;
+    z-index: 4;
+    background-color: var(--White);
+}
+.three_points .point_one{
+    left: 23vh;
+    top: 6vh;
+}
+.three_points .point_two{
+    left: 23vh;
+    top: 5vh;
+}
+.three_points .point_three{
+    left: 23vh;
+    top: 7vh;
+}
+.flesh{
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    z-index: 4;
+    background-color: transparent;
+    left: 2.5vh;
+    top: 6vh;
+    border: 2px solid ;
+    border-color: transparent transparent var(--White) var(--White);
+    transform: rotate(45deg);
+
+}
+.App .messages{
+    position: absolute;
+    z-index: 2;
+    background-color: var(--Light_Grayish_Violet);
+    height: 60vh;
+    width: 25vh;
+    left: 1vh;
+    top: 1vh;
+    border-radius: 3vh;  
+}
+.Personel_information{
+    background-image: linear-gradient(
+        to right,
+        hsl(293, 100%, 63%),
+        hsl(0, 0%, 2%)
+    );
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 3vh 1.5vh 0.5vh 3vh;
+    
+}
+.Personel_image img{
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    border: 2px solid var(--White);
+}
+.information{
+    padding: 1vh;
+    padding-bottom: 2vh;
+}
+.information .Name {
+    font-size: 1.2vh;
+    color: var(--White);
+    padding-bottom: 0.8vh;
+}
+.information .State{
+    color: var(--Pale_Violet);
+    font-size: 0.9vh;
+}
+section .sender{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--Moderate_Violet);
+    padding: 1.5vh;
+    font-size: 1vh;
+    width: 19vh; 
+    height: 13vh;   
+}
+section .sender div{
+    background-color: var(--Grayish_Blue);
+    border-radius: 1vh;
+    padding: 1vh;
+    
+}
+section .dog_pictures{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5vh;
+}
+section .dog_pictures img{
+    width: 5vh;
+    height: 5vh;
+    padding-right: 0.5vh;
+    border-radius: 1vh;
+}
+section .recevier{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1vh;
+    width: 23vh; 
+    height: 8vh;
+    
+}
+section .recevier div{
+    background-color: var(--White);
+    border-radius: 1vh;
+    padding: 1vh;
+}
+section .recevier .message_one{
+    width: 14vh;
+    font-size: 0.85vh;
+}
+
+.last_message{
+    
+    
+    width: 16vh; 
+    height: 5vh;  
+    padding: 1vh;
+   
+    
+}
+.last_message div {
+    font-size: 1vh;
+    background-color: var(--Grayish_Blue);
+    color: var(--Moderate_Violet);
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3vh;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vh;
+    
+    width: 22vh; 
+    height: 11vh;   
+}
+.payment div {
+    color: var(--Grayish_Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        to right,
+        hsl(293, 100%, 63%),
+        hsl(0, 0%, 2%)
+    );
+    height: 4vh;
+    border-radius: 1vh;
+    padding-left: 3.5vh;
+    font-size: 1vh;
+}
+.payment div::before{
+    content: "";
+    position: absolute;
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 50%;
+    background-color: transparent;
+    left: 2vh;
+    border: 1px solid var(--Grayish_Blue);
+}
+.payment span{
+    font-size: 2vh;
+    color: var(--White);
+    justify-content: flex-end;
+    padding: 1vh;
+}
+.send_message{
+    border-radius: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22vh; 
+    height: 4vh; 
+    background-color: var(--White);
+    margin-left: 1vh;
+    font-size: 1.5vh;
+    color: var(--Grayish_Blue);
+    padding: 1vh;
+}
+.send_message::before{
+    position: absolute;
+    content: "";
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: var(--Very_Dark_Desaturated_Violet);
+    border-radius: 50%;
+    right: 3.5vh;
+}
+.send_message::after{
+    content: "";
+    position: absolute;
+    width: 0.8vh;
+    height: 0.8vh;
+    z-index: 4;
+    background-color: transparent;
+    right: 4.3vh;
+    bottom: 2.6vh;
+    border: 2px solid ;
+    border-color: var(--White) var(--White) transparent transparent;
+    transform: rotate(45deg);
+}
+@media (max-width: 870px) {
+    .simple_booking{
+        position: relative;
+        top: 35vh;
+        right: 45%;
+    }
+    .simple_booking h1{
+        width: 35vh;
+    }
+}
